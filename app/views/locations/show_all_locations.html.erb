@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Tag</th>
+        <th>Coordinates</th>
+    </tr>
+        
+        <% @events.each do |e| %>
+        <tr>
+            <td><% = e.name %> </td>
+            <td><% = e.description %> </td>
+            <td><% = e.tag %> </td>
+            <td><% = e.coordinates %> </td>
+        </tr>
+        <% end %>
+    
+</table>

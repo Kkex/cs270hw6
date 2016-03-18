@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   # user routing
   get '/users/new', to: 'users#new_user', as: :new_user
   get '/users', to: 'users#show_all_users', as: :show_all_users
-  get '/users/:id', to: 'users#show_users', as: :show_users
+  get '/users/:id', to: 'users#show_user', as: :show_user
   get '/users/:id/edit', to: 'users#edit_user', as: :edit_user
   delete '/users/:id', to: 'users#delete_user', as: :delete_user
 end
